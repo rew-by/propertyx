@@ -1,0 +1,34 @@
+# propertyx
+
+## Overview
+
+Written in PHP5 using symfony framework, propertyx is designed to be a fast and 
+flexible tool for your real estate company. It is composed by two distinct 
+applications that can interact with each other. The first one is for backoffice 
+work and organize your real estate listing, collect your leads and much more. 
+The second one is for frontoffice and to publish on internet your real estates.
+
+## Demo
+
+A working demo is online at [http://INDIRIZZO/](http://INDIRIZZO/)
+
+## Installation
+
+To install (from your project's root):
+
+    svn checkout http://propertyx.googlecode.com/svn/trunk/
+
+## Roadmap
+
+All modules are working, with functional tests.
+
+The project aims to fully implement:
+
+  * **Property** system: basic CRUD to organize your real estate listings
+
+  * **Images** system: organize images related to your real estate listings
+
+  * **Customer** system: organize your customers, collect their requests and 
+    filter results
+
+  * **Frontend** application: spread your real estate listings to the world
