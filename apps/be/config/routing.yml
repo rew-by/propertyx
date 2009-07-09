@@ -1,0 +1,32 @@
+property:
+  class: sfPropelRouteCollection
+  options:
+    model:                Property
+    module:               prop
+    prefix_path:          prop
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+ 
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+ 
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

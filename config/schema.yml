@@ -1,0 +1,55 @@
+propel:
+  property:
+    id:               ~
+    slug:             { type: varchar(255) }
+    municipality:     { type: varchar(255), required: true }
+    address:          { type: varchar(255) }
+    area:             { type: varchar(255) }
+    offer_id:         { type: integer, required: true, foreignTable: offer, foreignReference: id, onDelete: cascade }
+    type_id:          { type: integer, required: true, foreignTable: type, foreignReference: id, onDelete: cascade }
+    typology_id:      { type: integer, required: true, foreignTable: typology, foreignReference: id, onDelete: cascade }
+    description:      { type: longvarchar, required: true }
+    state_id:         { type: integer, required: true, foreignTable: state, foreignReference: id, onDelete: cascade }
+    year:             { type: integer }
+    floors:           { type: integer }
+    on_floor:         { type: integer }
+    surface:          { type: float, required: true }
+    heating:          { type: varchar(255) }
+    garden:           { type: boolean }
+    balcony:          { type: integer }
+    bath:             { type: integer }
+    bedroom:          { type: integer }
+    entrance:         { type: integer }
+    kitchen_id:       { type: integer, required: true, foreignTable: kitchen, foreignReference: id, onDelete: cascade }
+    diningroom:       { type: boolean, default: 0 }
+    livingroom:       { type: boolean, default: 0 }
+    cellar:           { type: boolean, default: 0 }
+    lift:             { type: boolean, default: 0 }
+    attic:            { type: boolean, default: 0 }
+    parking:          { type: integer, default: 0 }
+    price:            { type: float, required: true, default: 0 }
+    is_public:        { type: boolean, required: true, default: 0 }
+    has_priority:     { type: boolean, default: 0 }
+    sf_asset_folder_id: { type: integer, required: false, foreignTable: sf_asset_folder, foreignReference: id, onDelete: cascade }
+    created_at:       ~
+    updated_at:       ~
+    
+  type:
+    id:               ~
+    name:             { type: varchar(255), required: true }
+  
+  state:
+    id:               ~
+    name:             { type: varchar(255), required: true }
+  
+  typology:
+    id:               ~
+    name:             { type: varchar(255), required: true }
+  
+  kitchen:
+    id:               ~
+    name:             { type: varchar(255), required: true }
+  
+  offer:
+    id:               ~
+    name:             { type: varchar(255), required: true }
