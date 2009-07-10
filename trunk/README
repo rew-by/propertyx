@@ -18,6 +18,53 @@ To install (from your project's root):
 
     svn checkout http://propertyx.googlecode.com/svn/trunk/
 
+Than download symfony and unzip it in the /lib/vendor/ directory
+
+    cd lib/vendor/
+    wget -c http://www.symfony-project.org/get/symfony-1.2.7.zip
+    unzip symfony-1.2.7.zip
+    mv symfony-1.2.7 symfony
+    rm symfony-1.2.7.zip
+
+Go back to your project's root and check that everything went fine
+
+    php symfony -V
+
+you should see symfony version and install path.
+
+Create a MySQL database called propertyx
+
+    mysqladmin -u root -p create propertyx
+
+and configure all the needed with
+
+    php symfony configure:database "mysql:host=localhost;dbname=propertyx" root yourpassword
+
+end with setting to the proper path the propel.output.dir line you find in config/propel.ini .
+
+Create the tables in the database, you need to run the propel:insert-sql task
+
+    php symfony propel:insert-sql
+
+Configure your Apache Virtual Host like this
+
+    Virtual Host
+
+Make cache and log directories
+
+    mkdir cache
+    mkdir log
+
+Check permissions for cache, log directories and symfony file in the project's root
+
+    chmod -R 777 cache
+    chmod -R 777 log
+    chmod 777 symfony
+
+Create a user for the beckend application
+
+    php symfony guard:create-user --application="be" admin password
+
 ## Roadmap
 
 All modules are working, with functional tests.
