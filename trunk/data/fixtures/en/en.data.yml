@@ -1,0 +1,101 @@
+Kitchen:
+  Kitchen_1:
+    name: 'Kitchen nook'
+  Kitchen_2:
+    name: 'Kitchen'
+Typology:
+  Typology_1:
+    name: '2 bedrooms'
+  Typology_2:
+    name: '3 bedrooms'
+  Typology_3:
+    name: 'Studio'
+Offer:
+  Offer_1:
+    name: Rent
+  Offer_2:
+    name: Sell
+  Offer_3:
+    name: 'Construction site'
+Type:
+  Type_1:
+    name: Flat
+  Type_2:
+    name: 'Two-family house'
+  Type_3:
+    name: 'House'
+  Type_4:
+    name: Villa
+  Type_5:
+    name: Rural
+State:
+  State_1:
+    name: New
+  State_2:
+    name: Redecorated
+  State_3:
+    name: 'To be restructured'
+  State_4:
+    name: Used
+Property:
+  Property_1:
+    slug: ''
+    municipality: Milan
+    address: 'Via di Qua, 33'
+    area: Stadio
+    offer_id: Offer_2
+    type_id: Type_1
+    typology_id: Typology_1
+    description: 'Set in a stunning period building, this two bedroomed flat is excellently located for the amenities of Milan...'
+    state_id: State_1
+    year: '2006'
+    floors: '1'
+    on_floor: '0'
+    surface: '60'
+    heating: Autonomous
+    garden: '1'
+    bath: '1'
+    bedroom: '2'
+    entrance: '1'
+    kitchen_id: Kitchen_2
+    diningroom: '0'
+    livingroom: '0'
+    cellar: '0'
+    lift: '0'
+    attic: '0'
+    parking: '2'
+    price: '150000'
+    is_public: '1'
+    has_priority: '0'
+    created_at: '2009-06-30 13:57:17'
+    updated_at: '2009-06-30 13:57:17'
+  Property_2:
+    slug: ''
+    municipality: Rome
+    address: 'Via Cassia'
+    offer_id: Offer_2
+    type_id: Type_4
+    typology_id: Typology_2
+    description: 'Set in a stunning period building, this three bedroomed house is excellently located for the amenities of Rome...'
+    state_id: State_4
+    year: '2006'
+    floors: '3'
+    on_floor: '0'
+    surface: '210'
+    heating: ''
+    garden: '0'
+    balcony: '2'
+    bath: '3'
+    bedroom: '3'
+    kitchen_id: Kitchen_1
+    diningroom: '0'
+    livingroom: '0'
+    cellar: '0'
+    lift: '0'
+    attic: '0'
+    parking: '2'
+    price: '230000'
+    is_public: '1'
+    has_priority: '0'
+    created_at: '2009-06-30 15:23:00'
+    updated_at: '2009-06-30 15:23:00'
