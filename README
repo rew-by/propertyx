@@ -65,6 +65,11 @@ Create a user for the beckend application
 
     php symfony guard:create-user --application="be" admin password
 
+Load some data fixtures into the database (in data/fixtures/ you can find two diretories, 
+italian and english) for you preferred language
+
+    php symfony propel:data-load data/fixtures/en/en.data.yml
+
 ## Roadmap
 
 All modules are working, with functional tests.
