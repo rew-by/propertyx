@@ -2,8 +2,8 @@ property:
   class: sfPropelRouteCollection
   options:
     model:                Property
-    module:               prop
-    prefix_path:          prop
+    module:               property
+    prefix_path:          property
     column:               id
     with_wildcard_routes: true
 
@@ -22,7 +22,7 @@ sf_guard_password:
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: property, action: index }
 
 default_index:
   url:   /:module
