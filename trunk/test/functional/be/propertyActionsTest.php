@@ -73,15 +73,25 @@ $browser->
 	click('Save')->
 	
 	with('form')->begin()->
-		hasErrors(3)->
+		hasErrors(8)->
 		isError('surface', 'required')->
 		isError('municipality', 'required')->
 		isError('description', 'required')->
+		isError('offer_id', 'required')->
+		isError('type_id', 'required')->
+		isError('state_id', 'required')->
+		isError('typology_id', 'required')->
+		isError('kitchen_id', 'required')->
 	end()->
 	
 	setField('property[surface]', '100')->
 	setField('autocomplete_property[municipality]', 'Udine')->
 	setField('property[description]', 'Bellissimo appartamento...')->
+	setField('property[offer_id]', '1')->
+	setField('property[type_id]', '1')->
+	setField('property[state_id]', '1')->
+	setField('property[typology_id]', '1')->
+	setField('property[kitchen_id]', '1')->
 	
 	click('Save')->
 	
@@ -106,6 +116,11 @@ $browser->
 	setField('property[surface]', '120')->
 	setField('autocomplete_property[municipality]', 'Milano')->
 	setField('property[description]', 'Bellissimo nuovo appartamento...')->
+	setField('property[offer_id]', '2')->
+	setField('property[type_id]', '2')->
+	setField('property[state_id]', '2')->
+	setField('property[typology_id]', '2')->
+	setField('property[kitchen_id]', '2')->
 	
 	click('Save')->
 	
