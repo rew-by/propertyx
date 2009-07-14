@@ -13,6 +13,7 @@
     		<?php if ($sf_user->isAuthenticated()): ?>
     			<li><?php echo link_to(__('Property'), 'property/index') ?></li>
 	    		<li><?php echo link_to(__('Images'), 'sfAsset/index') ?></li>
+	    		<li><?php echo link_to(__('Customers'), 'customer/index') ?></li>
 	    		<li><?php echo link_to_function('Settings',visual_effect('appear', 'p_submenu')) ?></li>
 					<li><?php echo link_to('Log out', '@sf_guard_signout') ?></li>
 				<?php else : ?>
