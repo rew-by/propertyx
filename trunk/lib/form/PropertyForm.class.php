@@ -28,6 +28,11 @@ class PropertyForm extends BasePropertyForm
 		  'model' => 'sfAssetFolder',
 		  'url'   => $this->getOption('images'),
 		));
+		$this->widgetSchema['state_id'] = new sfWidgetFormPropelChoice(array('model' => 'State', 'add_empty' => true));
+		$this->widgetSchema['offer_id'] = new sfWidgetFormPropelChoice(array('model' => 'Offer', 'add_empty' => true));
+  	$this->widgetSchema['type_id'] = new sfWidgetFormPropelChoice(array('model' => 'Type', 'add_empty' => true));
+  	$this->widgetSchema['typology_id'] = new sfWidgetFormPropelChoice(array('model' => 'Typology', 'add_empty' => true));
+  	$this->widgetSchema['kitchen_id'] = new sfWidgetFormPropelChoice(array('model' => 'Kitchen', 'add_empty' => true));
 		$this->widgetSchema['created_at'] = new sfWidgetFormInput(array(), array('disabled' => true));
 		$this->widgetSchema['updated_at'] = new sfWidgetFormInput(array(), array('disabled' => true));
   }
