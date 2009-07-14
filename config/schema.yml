@@ -53,3 +53,24 @@ propel:
   offer:
     id:               ~
     name:             { type: varchar(255), required: true }
+  
+  customer:
+    id:               ~
+    name:             { type: varchar(255), required: true }
+    surname:          { type: varchar(255), required: true }
+    municipality:     { type: varchar(255) }
+    address:          { type: varchar(255) }
+    zip:              { type: varchar(5) }
+    phone:            { type: varchar(255) }
+    mobile:           { type: varchar(255) }
+    newmunicipality:  { type: varchar(255) }
+    offer_id:         { type: integer, foreignTable: offer, required: true, foreignReference: id, onDelete: cascade }
+    type_id:          { type: integer, foreignTable: type, required: true, foreignReference: id, onDelete: cascade }
+    typology_id:      { type: integer, foreignTable: typology, required: true, foreignReference: id, onDelete: cascade }
+    bedroom:          { type: integer }
+    bath:             { type: integer }
+    description:      { type: longvarchar }
+    maxprice:         { type: float, required: true }
+    is_active:        { type: boolean, required: true, default: 1 }
+    created_at:       ~
+    updated_at:       ~
