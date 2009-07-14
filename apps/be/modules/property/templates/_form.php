@@ -17,17 +17,17 @@
 			      			<div style="float:left;margin-right:16px;">
 			      				<?php echo $form['year']->renderLabel() ?><br />
 					          <?php echo $form['year']->renderError() ?>
-					          <?php echo $form['year']->render(array('size' => '13')) ?><br />
+					          <?php echo $form['year']->render(array('class' => 'smalltext')) ?><br />
 			      			</div>
 			      			<div style="float:left;margin-right:16px;">
 			      				<?php echo $form['surface']->renderLabel() ?><br />
 					          <?php echo $form['surface']->renderError() ?>
-					          <?php echo $form['surface']->render(array('size' => '13')) ?><br />
+					          <?php echo $form['surface']->render(array('class' => 'smalltext')) ?><br />
 			      			</div>
 			      			<div style="float:left;">
 			      				<?php echo $form['price']->renderLabel() ?><br />
 					          <?php echo $form['price']->renderError() ?>
-					          <?php echo $form['price']->render(array('size' => '13')) ?>
+					          <?php echo $form['price']->render(array('class' => 'smalltext')) ?>
 			      			</div>
 			      			<div style="clear:both;"></div>
 			      		</div>
@@ -35,19 +35,19 @@
 			      		<div class="block">
 			      			<?php echo $form['slug']->renderLabel() ?><br />
 				          <?php echo $form['slug']->renderError() ?>
-				          <?php echo $form['slug']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['slug']->render(array('class' => 'text')) ?><br />
 				          
 				          <?php echo $form['municipality']->renderLabel() ?><br />
 				          <?php echo $form['municipality']->renderError() ?>
-				          <?php echo $form['municipality']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['municipality']->render(array('class' => 'text')) ?><br />
 				          
 				          <?php echo $form['address']->renderLabel() ?><br />
 				          <?php echo $form['address']->renderError() ?>
-				          <?php echo $form['address']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['address']->render(array('class' => 'text')) ?><br />
 				          
 				          <?php echo $form['area']->renderLabel() ?><br />
 				          <?php echo $form['area']->renderError() ?>
-				          <?php echo $form['area']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['area']->render(array('class' => 'text')) ?><br />
 				          
 				          <?php echo $form['state_id']->renderLabel(__('State')) ?><br />
 				          <?php echo $form['state_id']->renderError() ?>
@@ -71,13 +71,13 @@
 				          
 				          <?php echo $form['description']->renderLabel() ?><br />
 				          <?php echo $form['description']->renderError() ?>
-				          <?php echo $form['description']->render(array('cols' => '52', 'rows' => '10')) ?>
+				          <?php echo $form['description']->render(array('class' => 'textarea')) ?>
 			      		</div>
 			      		
 			      		<div class="block">
 			      			<?php echo $form['sf_asset_folder_id']->renderLabel(__('Images folder')) ?><br />
 				          <?php echo $form['sf_asset_folder_id']->renderError() ?>
-				          <?php echo $form['sf_asset_folder_id']->render(array('size' => '55')) ?>
+				          <?php echo $form['sf_asset_folder_id']->render(array('class' => 'text')) ?>
 			      		</div>
 			      	</td>
 			      	<td>
@@ -94,11 +94,11 @@
 			      		<div class="block">
 			      			<?php echo $form['floors']->renderLabel() ?><br />
 				          <?php echo $form['floors']->renderError() ?>
-				          <?php echo $form['floors']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['floors']->render(array('class' => 'text')) ?><br />
 			        
 			         		<?php echo $form['on_floor']->renderLabel() ?><br />
 				          <?php echo $form['on_floor']->renderError() ?>
-				          <?php echo $form['on_floor']->render(array('size' => '55')) ?>
+				          <?php echo $form['on_floor']->render(array('class' => 'text')) ?>
 			      		</div>
 			      		
 			      		<div class="block">
@@ -130,37 +130,37 @@
 			      		<div class="block">
 			      			<?php echo $form['balcony']->renderLabel() ?><br />
 				          <?php echo $form['balcony']->renderError() ?>
-				          <?php echo $form['balcony']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['balcony']->render(array('class' => 'text')) ?><br />
 			        
 				        	<?php echo $form['bath']->renderLabel() ?><br />
 				          <?php echo $form['bath']->renderError() ?>
-				          <?php echo $form['bath']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['bath']->render(array('class' => 'text')) ?><br />
 			        
 				        	<?php echo $form['bedroom']->renderLabel() ?><br />
 				          <?php echo $form['bedroom']->renderError() ?>
-				          <?php echo $form['bedroom']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['bedroom']->render(array('class' => 'text')) ?><br />
 			        
 				        	<?php echo $form['entrance']->renderLabel() ?><br />
 				          <?php echo $form['entrance']->renderError() ?>
-				          <?php echo $form['entrance']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['entrance']->render(array('class' => 'text')) ?><br />
 			        
 				        	<?php echo $form['parking']->renderLabel() ?><br />
 				          <?php echo $form['parking']->renderError() ?>
-				          <?php echo $form['parking']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['parking']->render(array('class' => 'text')) ?><br />
 				          
 				          <?php echo $form['heating']->renderLabel() ?><br />
 				          <?php echo $form['heating']->renderError() ?>
-				          <?php echo $form['heating']->render(array('size' => '55')) ?>
+				          <?php echo $form['heating']->render(array('class' => 'text')) ?>
 			      		</div>
 			      		
 			      		<div class="block">
 			      			<?php echo $form['created_at']->renderLabel() ?><br />
 				          <?php echo $form['created_at']->renderError() ?>
-				          <?php echo $form['created_at']->render(array('size' => '55')) ?><br />
+				          <?php echo $form['created_at']->render(array('class' => 'text')) ?><br />
 			     				
 				          <?php echo $form['updated_at']->renderLabel() ?><br />
 			        		<?php echo $form['updated_at']->renderError() ?>
-			          	<?php echo $form['updated_at']->render(array('size' => '55')) ?>
+			          	<?php echo $form['updated_at']->render(array('class' => 'text')) ?>
 			      		</div>
 			      	</td>
 			      </tr>

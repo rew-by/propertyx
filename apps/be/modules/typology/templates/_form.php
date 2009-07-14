@@ -16,7 +16,7 @@
 			        	<div class="block">
 				      		<?php echo $form['name']->renderLabel() ?><br />
 				          <?php echo $form['name']->renderError() ?>
-				          <?php echo $form['name'] ?>
+				          <?php echo $form['name']->render(array('class' => 'text')) ?>
 			          </div>
 			        </td>
 			      </tr>
