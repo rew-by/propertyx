@@ -1,3 +1,5 @@
+<?php use_helper('Javascript') ?>
+
 <h1><?php echo __('Property List') ?></h1>
 
 <div id="p_be_list">
@@ -46,6 +48,13 @@
 								<?php else: ?>
 									<?php echo image_tag('famfamicons/cross.png', 'alt=No') ?>
 								<?php endif ?>
+								<?php echo link_to_remote(image_tag('famfamicons/magnifier.png', 'class=lightSwitcher'), array(
+								    'update' => 'feedback',
+								    'url'    => 'property/show?id='.$property->getId(),
+										'method' => 'get',
+										'script' => 'true',
+										'complete'=> visual_effect('appear', 'p_shadow', array('from' => 0.0, 'to' => 0.8)),
+								)) ?>
 				      	<a href="<?php echo url_for('property/edit?id='.$property->getId()) ?>"><?php echo image_tag('famfamicons/application_edit.png') ?></a>
 				      </td>
 				    </tr>
@@ -67,3 +76,5 @@
   	</div>
   </div>
 </div>
+<div id="feedback"></div>
+<div id="p_shadow" style="display:none;"></div>

@@ -69,6 +69,17 @@ class propertyActions extends sfActions
   }
 	
   /**
+   * Executes show action
+   *
+   * @param sfWebRequest $request
+   */
+	public function executeShow(sfWebRequest $request)
+  {
+  	$this->forward404Unless($property = PropertyPeer::retrieveByPk($request->getParameter('id')), sprintf('Object property does not exist (%s).', $request->getParameter('id')));
+  	$this->property = $property;
+  }
+  
+  /**
    * Executes new action
    *
    * @param sfWebRequest $request
