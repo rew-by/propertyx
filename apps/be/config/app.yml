@@ -15,3 +15,6 @@ all:
         height: 152
     search_pager_size: 20                    # Number of resuts per page
     mass_upload_size:  5                     # Number of file upload controls displayed in the mass upload form
+  .general:
+    currency:          EUR
+    surface:           Mq
